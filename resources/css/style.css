@@ -89,7 +89,9 @@ a {
 /* media */
 
 @media only screen and (max-width: 1024px) {
-
+  .container {
+    /*width: 90%;*/
+  }
   .container a {
     display: none;
   }
@@ -120,8 +122,70 @@ a {
     padding-left: 0;
   }
 }
+/* ----------------------*/
+@media only screen and (max-width: 470px) {
 
+  .big_pic {
+    height: 15rem;
+    width: 100%;
+  }
 
+  .arrival {
+    position: relative;
+    top: 4rem;
+
+    width: 100%;
+    text-align: left;
+    padding-top: 1rem auto auto 2rem;
+
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .arrival h4 {
+    font-size: 0.77rem;
+    margin: 0.25rem 0;
+  }
+/* */
+  .container a {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    padding: 0.75rem 0 0.75rem 0;
+  }
+  .mobile-nav a {
+    color: white;
+  }
+/* */
+  .container .glasses, .container .watch {
+    display: none;
+  }
+
+  .container .pen {
+    width: 90%;
+    margin: auto;
+  }
+  .coordinators .container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .location, .container .hours {
+    width: 90%;
+    margin: 0.5rem 0;
+
+  }
+  /* */
+  body .foot {
+    padding-left: 0;
+    justify-content: center;
+  }
+}
 /* ----------------------------------------- */
 /* РУЧКА ОЧКИ ЧАСЫ*/
 .items {
@@ -200,11 +264,3 @@ a {
   margin: 0;
 
 }
-
-
-
-/*
-@media only screen and (max-width: 470px) {
-
-}
-*/
